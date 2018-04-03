@@ -1,12 +1,12 @@
 # SharedPreferences
 Shared Preferences on Android are used to store mostly primitive data types permanently so they can be retrieved after restarting the app. 
 
-This small library aims to make storing values easier than ever.
+This small library makes storing values easier than ever.
 Download the [SharedPreferences.java file](../master/SharedPreferences.java) and add it to you project. That's it!
 
 This library can also be used with Android's [BackupAgent](https://developer.android.com/guide/topics/data/autobackup.html#EnablingAutoBackup) so when the user restores his phone from a backup, the Shared Preferences files are downloaded automatically.
 
-## Filetypes
+## Datatypes
 
 + String
 + Integer
@@ -30,7 +30,7 @@ e.g.: `saveString(String key, String value)`.
 This will then be stored like `<key>value</key>`.
 
 ### Retrieving data
-Stored data can be retrieved by calling the `get` method while supplying a key and a default return value in case the pair does not exist
+Stored data can be retrieved by calling the `get` method while supplying a key and a default return value in case the key does not exist
 
 e.g.: `getString(String key, String defaultValue)`.
 
